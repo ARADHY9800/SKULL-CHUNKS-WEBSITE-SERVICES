@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skull Chunks - Unleash Your Web Potential</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://i.imgur.com/rizvFnp.jpeg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .hero-content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .cta-button {
+            background-color: #ff6347;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #ff4500;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 30px;
+        }
+        .project-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .project {
+            width: 250px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .project h3 {
+            margin: 10px 0;
+        }
+        .project p {
+            font-size: 14px;
+            color: #666;
+        }
+        .project-button {
+            background-color: #ff6347;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .project-button:hover {
+            background-color: #ff4500;
+        }
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        ul li {
+            margin: 5px 0;
+            text-align: left;
+        }
+        .about {
+            padding: 50px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .offerings {
+            max-width: 800px;
+            text-align: left;
+            margin: 0 auto;
+        }
+        .offerings ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        .offerings li {
+            margin: 5px 0;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            display: grid;
+            gap: 15px;
+        }
+        form label {
+            text-align: left;
+        }
+        form input, form textarea, form button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #ff6347;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #ff4500;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .scroll-up-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .scroll-up-button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#contact">Contact</a></li>
+               <li><a href="#">Creators Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Skull Chunks Web Services</h1>
+            <p>Unleash Your Web Potential</p>
+            <a href="#projects" class="cta-button">EXPLORE PROJECTS</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2>OUR PROJECTS</h2>
+    <div class="project-list">
+        <div class="project">
+            <img src="https://i.imgur.com/DVQsAeJ.png" alt="Project 1">
+            <h3>PROJECT 1: Aura-Astra Website</h3>
+            <p>The website is created by us for someone.</p>
+            <a href="https://aura-astra.github.io/funk" class="project-button">View Details</a>
+        </div>
+        <div class="project">
+            <img src="https://i.imgur.com/J37sfu9.png" alt="Project 2">
+            <h3>PROJECT 2: Portfolio Website</h3>
+            <p>The website is created by us for someone.</p>
+            <a href="http://shaurya-fatania.github.io/home" class="project-button">View Details</a>
+        </div>
+        <div class="project">
+            <img src="https://i.imgur.com/lBG2veM.png" alt="Project 3">
+            <h3>PROJECT 3: SKULL CHUNKS OFFICIAL</h3>
+            <p>OUR BRAND MAIN WEBSITE.</p>
+            <a href="https://aradhy9800.github.io/SKULL-CHUNKS/" class="project-button">View Details</a>
+        </div>
+    </div>
+</section>
+<!-- About Section -->
+<section id="about" class="about">
+    <h2>ABOUT SKULL CHUNKS</h2>
+    <p>Welcome to Skull Chunks, where creativity meets technology to bring your web design dreams to life. As pioneers in the world of website creation, we specialize in crafting stunning, user-friendly websites that elevate your brand and engage your audience.</p>
+    <h3>Our Mission</h3>
+    <p>At Skull Chunks, our mission is to empower businesses and individuals with innovative web solutions that are as unique as their visions. We believe that every website should not only look exceptional but also provide a seamless experience for users. Our goal is to transform your ideas into a digital reality that stands out in the crowded online space.</p>
+    <h3>What We Offer</h3>
+    <div class="offerings">
+        <ul>
+            <li>Custom Web Design: Tailored designs that reflect your brand's personality and values.</li>
+            <li>Responsive Development: Websites that look and function perfectly on all devices, from desktops to smartphones.</li>
+            <li>E-commerce Solutions: Powerful, secure, and user-friendly e-commerce platforms to boost your sales.</li>
+            <li>SEO Optimization: Ensuring your website ranks high on search engines to attract more visitors.</li>
+            <li>Content Management Systems: Easy-to-use systems that allow you to manage and update your content effortlessly.</li>
+            <li>Ongoing Support: Dedicated support to help you with any updates, troubleshooting, or enhancements.</li>
+        </ul>
+    </div>
+    <h3>Our Process</h3>
+    <p>1. Discovery & Planning: We start by understanding your needs, goals, and target audience. This helps us create a detailed plan that aligns with your vision.</p>
+    <p>2. Design & Development: Our team of designers and developers collaborate to create a visually stunning and functional website.</p>
+    <p>3. Testing & Launch: Rigorous testing ensures your website performs flawlessly. Once approved, we launch your site and make it live.</p>
+    <p>4. Support & Maintenance: We provide continuous support and maintenance to keep your website up-to-date and running smoothly.</p>
+    <h3>Why Choose Us?</h3>
+    <p>Expert Team: Our talented team brings together years of experience in web design, development, and digital marketing.</p>
+    <p>Customer-Centric Approach: We prioritize your satisfaction and work closely with you throughout the project.</p>
+    <p>Innovation & Creativity: We stay ahead of the curve by implementing the latest technologies and trends.</p>
+    <p>Affordable Pricing: High-quality services at competitive prices to fit your budget.</p>
+    <p>Join us at Skull Chunks and let’s create a digital masterpiece together. Whether you’re launching a new business or revamping your online presence, we are here to help you succeed.</p>    
+</section>
+
+<!-- Support Section -->
+<section id="support" class="support">
+    <h2>SUPPORT</h2>
+    <p>Need help? Our support team is here to assist you with any questions or issues you may have. Feel free to reach out to us for troubleshooting tips, website information, or any other inquiries.</p>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact">
+    <h2>CONTACT US</h2>
+    <a href="mailto:skullchunks@gmail.com" class="button">Email Us</a>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2024 Skull Chunks Service Corporation BY Aradhy Dubey. All Rights Reserved.</p>
+    </footer>
+<button onclick="scrollToTop()" class="scroll-up-button">&#8593;</button>
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
