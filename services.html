@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            color: red; /* Our Services title in red */
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .service-option {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            width: 45%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .service-option h2 {
+            color: #333;
+        }
+
+        /* Green background for Normal and Membership packages */
+        .package {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .package h3 {
+            margin: 0;
+        }
+
+        .package p {
+            display: none;
+            margin: 5px 0 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Styling for the Home button */
+        .home-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .home-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OUR WEB SERVICES</h1>
+        <p>Choose The Best Option For Your Needs!</p>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-option">
+            <h2>Normal</h2>
+            <p>Explore our basic packages tailored to suit your needs.</p>
+            <div class="package" onclick="toggleDetails(this)">
+                <h3>BASIC PACKAGE</h3>
+                <p>A web page of small size is provided with logo,graphics and texture provided by you.
+COST:$5 INR421.</p>
+            </div>
+            <div class="package" onclick="toggleDetails(this)">
+                <h3>STANDARD PACKAGE</h3>
+                <p>A web page of medium size is provided with logo provided by you and graphics and texture was provided by us [as per your recommendation]     
+COST:$10 INR842</p>
+            </div>
+            <div class="package" onclick="toggleDetails(this)">
+                <h3>PREMIUM PACKAGE</h3>
+                <p>A web page of large size is provided with logo , graphics and texture was provided by us [as per your recommendation]     COST:$15 INR1,263</p>
+            </div>
+        </div>
+
+        <div class="service-option">
+            <h2>Membership</h2>
+            <p>Upgrade to membership for exclusive benefits and access.</p>
+            <div class="package" onclick="toggleDetails(this)">
+                <h3>SILVER MEMBERSHIP</h3>
+                <p>1 website is provided for 1 week package is for 4 weeks or 1 month. logo , graphics and texture is provided by you. COST:$48 INR4,098</p>
+            </div>
+            <div class="package" onclick="toggleDetails(this)">
+                <h3>GOLD MEMBERSHIP</h3>
+                <p>1 website is provided for 1 week package is for 8 weeks or 2 month. logo was provided by us graphics and texture is provided by you [as per your recommendation]. COST:$96 INR8,096</p>
+            </div>
+            <div class="package" onclick="toggleDetails(this)">
+                <h3>PLATINUM MEMBERSHIP</h3>
+                <p>1 website is provided for 1 week package is for 12 weeks or 3 month. logo ,  graphics and texture was provided by us [as per your recommendation] COST:$144 INR12,146</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SKULL CHUNKS WEBSITE SERVICES BY Aradhy Dubey. All rights reserved.</p>
+        <a href="index.html" class="home-button">Home</a> <!-- Home button -->
+    </footer>
+
+    <script>
+        // Function to toggle package details
+        function toggleDetails(element) {
+            const details = element.querySelector('p');
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
